@@ -1,0 +1,408 @@
+/* ===================================
+   GOOGLE FONTS
+=================================== */
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Patrick+Hand&display=swap" rel="stylesheet">
+*/
+
+
+/* ===================================
+   RESET
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Fredoka',sans-serif;
+    overflow-x:hidden;
+    background:#F8F7DF;
+}
+
+
+/* ===================================
+   HERO BACKGROUND
+=================================== */
+
+.main{
+
+    min-height:100vh;
+    width:100%;
+
+    background-image:url("https://i.pinimg.com/1200x/c7/9d/55/c79d557ae5c73499be387a9ab58b7596.jpg");
+
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    position:relative;
+
+    padding-top:20px;
+
+}
+
+
+/* ===================================
+   NAVBAR
+=================================== */
+
+.nav{
+
+    width:min(1200px,92%);
+    height:60px;
+
+    position:fixed;
+    top:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.35);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+nav{
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 25px;
+
+}
+
+
+/* ===================================
+   LOGO
+=================================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#2F4735;
+
+    font-family:'Patrick Hand',cursive;
+
+    cursor:pointer;
+
+}
+
+.logo span{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.04);
+
+    transition:.3s;
+
+}
+
+
+/* ===================================
+   NAVIGATION LINKS
+=================================== */
+
+.sections{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.sections a{
+
+    text-decoration:none;
+
+    color:#2F4735;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.sections a:hover{
+
+    background:#FFF6C8;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+
+}
+
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero{
+
+    flex:1;
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px 40px;
+
+    animation:float 5s ease-in-out infinite;
+
+}
+
+
+/* ===================================
+   HERO TEXT
+=================================== */
+
+.text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.text h1{
+
+    font-family:'Patrick Hand',cursive;
+
+    font-size:clamp(3.5rem,7vw,5.5rem);
+
+    color:#222;
+
+    line-height:1;
+
+    text-shadow:3px 3px 8px rgba(255,255,255,.45);
+
+}
+
+.tagline{
+
+    margin-top:18px;
+
+    font-size:1.4rem;
+
+    color:#56704C;
+
+    font-weight:600;
+
+}
+
+.text p:last-child{
+
+    max-width:700px;
+
+    margin-top:18px;
+
+    line-height:1.8;
+
+    font-size:1.15rem;
+
+    color:#37483B;
+
+}
+
+
+/* ===================================
+   BUTTONS
+=================================== */
+
+.btn{
+
+    margin-top:45px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.btn button{
+
+    padding:16px 38px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#FFE89A;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+}
+
+.btn button:hover{
+
+    background:#F8C8D8;
+
+    transform:translateY(-6px);
+
+}
+
+
+/* ===================================
+   FLOAT ANIMATION
+=================================== */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width:900px){
+
+    .nav{
+
+        width:95%;
+
+        height:auto;
+
+        padding:15px 0;
+
+    }
+
+    nav{
+
+        flex-direction:column;
+
+        gap:18px;
+
+        padding:15px;
+
+    }
+
+    .sections{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:10px;
+
+    }
+
+    .logo span{
+
+        font-size:1.8rem;
+
+    }
+
+    .text h1{
+
+        font-size:3.5rem;
+
+    }
+
+    .tagline{
+
+        font-size:1.1rem;
+
+    }
+
+    .text p:last-child{
+
+        font-size:1rem;
+
+        padding:0 15px;
+
+    }
+
+    .btn{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .btn button{
+
+        width:220px;
+
+    }
+
+}

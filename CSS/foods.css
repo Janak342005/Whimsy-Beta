@@ -1,0 +1,810 @@
+/* ==========================================
+   GOOGLE FONTS
+   Fredoka + Patrick Hand
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Fredoka',sans-serif;
+    background:#FFF9F1;
+    color:#4D3B2F;
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:20px auto;
+
+    height:65px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 30px;
+
+    background:rgba(255,252,247,.65);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:40px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+    gap:10px;
+
+    font-family:'Patrick Hand',cursive;
+
+    color:#6A4E3A;
+
+}
+
+.logo span{
+
+    font-size:2rem;
+    font-weight:bold;
+
+}
+
+nav{
+
+    display:flex;
+    gap:20px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#6A4E3A;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    transition:.35s;
+
+    font-weight:500;
+
+}
+
+nav a:hover{
+
+    background:#F8D7A7;
+
+    transform:translateY(-3px);
+
+}
+
+.active{
+
+    background:#F3C98B;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+    min-height:65vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:linear-gradient(
+        180deg,
+        #FFFDF7,
+        #FFF3E2
+    );
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-family:'Patrick Hand',cursive;
+
+    font-size:4.8rem;
+
+    color:#6B4F3B;
+
+    margin-bottom:20px;
+
+}
+
+.subtitle{
+
+    font-size:1.2rem;
+
+    color:#816657;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+   SEARCH BAR
+========================================== */
+
+.search-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.search-box input{
+
+    width:420px;
+
+    padding:16px 22px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:35px;
+
+    background:white;
+
+    font-size:1rem;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.search-box button{
+
+    padding:16px 30px;
+
+    border:none;
+
+    border-radius:35px;
+
+    cursor:pointer;
+
+    background:#E9B96E;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.search-box button:hover{
+
+    background:#D9A553;
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   COMMON SECTION
+========================================== */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-family:'Patrick Hand',cursive;
+
+    font-size:3rem;
+
+    color:#6B4F3B;
+
+    margin-bottom:50px;
+
+}
+
+/* ==========================================
+   FOOD CATEGORIES
+========================================== */
+
+.category-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+.category-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.category-card h3{
+
+    margin-top:15px;
+
+    color:#6A4E3A;
+
+}
+
+.category-card p{
+
+    margin-top:10px;
+
+    color:#7A6A5E;
+
+    font-size:.95rem;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#FFF5E7;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================
+   FEATURED RECIPE
+========================================== */
+
+.featured{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.featured-image{
+
+    height:450px;
+
+    background:#F3E7D3;
+
+    border-radius:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.placeholder{
+
+    font-family:'Patrick Hand',cursive;
+
+    font-size:1.4rem;
+
+    color:#8A715B;
+
+}
+
+.featured-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    width:max-content;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    background:#E9B96E;
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:.9rem;
+
+}
+
+.featured-text h2{
+
+    text-align:left;
+
+    margin-bottom:20px;
+
+    font-size:3rem;
+
+}
+
+.featured-text p{
+
+    color:#6F5A4C;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+}
+
+.featured-text button{
+
+    width:180px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#E9B96E;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.featured-text button:hover{
+
+    background:#D89E4D;
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   RECIPE CARDS
+========================================== */
+
+.recipe-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.recipe-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.recipe-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.recipe-image{
+
+    height:240px;
+
+    background:#E8D7C2;
+
+}
+
+.recipe-card h3{
+
+    margin:20px 0 10px;
+
+    color:#5F4635;
+
+}
+
+.recipe-card p{
+
+    margin-bottom:25px;
+
+    color:#816657;
+
+}
+
+/* ==========================================
+   SEASONAL FAVORITES
+========================================== */
+
+.season-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.season-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.season-card:hover{
+
+    transform:scale(1.03);
+
+}
+
+.season-image{
+
+    height:220px;
+
+    background:#EEDFC8;
+
+}
+
+.season-card h3{
+
+    padding:18px;
+
+    color:#6B4F3B;
+
+}
+
+/* ==========================================
+   QUOTE
+========================================== */
+
+.quote{
+
+    background:#FFF2DD;
+
+    text-align:center;
+
+}
+
+blockquote{
+
+    font-family:'Patrick Hand',cursive;
+
+    font-size:2.2rem;
+
+    color:#6B4F3B;
+
+}
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+
+    text-align:center;
+
+}
+
+.newsletter p{
+
+    color:#816657;
+
+    margin:15px 0 35px;
+
+}
+
+.newsletter form{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.newsletter input{
+
+    width:350px;
+
+    padding:15px 20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:30px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.newsletter button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#E9B96E;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.newsletter button:hover{
+
+    background:#D89E4D;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#EADDC9;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+footer h3{
+
+    font-family:'Patrick Hand',cursive;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+    color:#5F4635;
+
+}
+
+footer p{
+
+    color:#6F5A4C;
+
+    margin-bottom:25px;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+.footer-links a{
+
+    text-decoration:none;
+
+    color:#6B4F3B;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#C17D3A;
+
+}
+
+footer small{
+
+    color:#7F6A5C;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        padding:20px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        margin-top:15px;
+
+    }
+
+    .hero h1{
+
+        font-size:3.2rem;
+
+    }
+
+    .search-box{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+    }
+
+    .featured{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .newsletter form{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .newsletter input{
+
+        width:100%;
+
+    }
+
+    .footer-links{
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+/* ==========================================
+   SMALL ANIMATIONS
+========================================== */
+
+button,
+.category-card,
+.recipe-card,
+.season-card{
+
+    transition:.35s ease;
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.recipe-image,
+.season-image{
+
+    transition:.4s;
+
+}
+
+.recipe-card:hover .recipe-image,
+.season-card:hover .season-image{
+
+    transform:scale(1.05);
+
+}
